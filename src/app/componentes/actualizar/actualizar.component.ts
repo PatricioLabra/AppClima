@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder,Validators,AbstractControl} from '@angular/forms'
+import { FormGroup, FormBuilder,Validators,AbstractControl } from '@angular/forms'
 
 @Component({
   selector: 'app-actualizar',
@@ -9,16 +9,19 @@ import { FormGroup, FormBuilder,Validators,AbstractControl} from '@angular/forms
 export class ActualizarComponent implements OnInit {
 
   formulario:FormGroup;
-  region: AbstractControl;
 
   constructor(public fb:FormBuilder) {
     this.formulario = this.fb.group({
       region:['',Validators.required],
-      clima:['',Validators.required],
+      soleado:['',Validators.required],
+      lluvioso:['',Validators.required],
+      nublado:['',Validators.required],
+      tormenta:['',Validators.required],
       dia:['',Validators.required],
-      temperatura:['',Validators.required]
+      temperatura:['',Validators.required],
+      celsius:['',Validators.required],
+      fahrenheit:['',Validators.required]
     });
-    this.region = this.formulario.controls["region"];
   }
 
   ngOnInit(): void {

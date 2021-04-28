@@ -2,8 +2,8 @@
   <ul>
     <li>
       <label>Región</label><br>
-      <select [formControlName]="region" >
-        <option value="null" selected>Select</option>
+      <select formControlName="region" >
+        <option value="" selected>Select</option>
         <option value="Valparaíso">Valparaíso</option>
         <option value="Metropolitana">Metropolitana</option>
         <option value="Bio Bio">Bio Bio</option>
@@ -11,33 +11,33 @@
       </select>
     </li>
     <li>
-      <label for="clima">Estado del Clima</label><br>
-      <input type="radio">Soleado <br>
-      <input type="radio">Lluvioso <br>
-      <input type="radio">Nublado <br>
-      <input type="radio">Tormenta <br>
+      <label>Estado del Clima</label><br>
+      <input formControlName="soleado" type="radio" value="soleado">Soleado <br>
+      <input formControlName="lluvioso" type="radio" value="lluvioso">Lluvioso <br>
+      <input formControlName="nublado" type="radio" value="nublado">Nublado <br>
+      <input formControlName="tormenta" type="radio" value="tormenta">Tormenta <br>
     </li>
     <li>
-      <label for="dia">Día</label><br>
-      <select class="dia" name="dia" >
+      <label >Día</label><br>
+      <select formControlName="dia">
         <option value="" selected>Select</option>
-        <option value="1">Lunes</option>
-        <option value="2">Martes</option>
-        <option value="3">Miércoles</option>
-        <option value="4">Jueves</option>
-        <option value="5">Viernes</option>
-        <option value="6">Sábado</option>
-        <option value="7">Domingo</option>
+        <option value="Lunes">Lunes</option>
+        <option value="Martes">Martes</option>
+        <option value="Miércoles">Miércoles</option>
+        <option value="Jueves">Jueves</option>
+        <option value="Viernes">Viernes</option>
+        <option value="Sábado">Sábado</option>
+        <option value="Domingo">Domingo</option>
       </select>
     </li>
     <li>
       <label for="temperatura">Temperatura</label><br>
-      <input type="number" name="temperatura" placeholder="Input">
+      <input formControlName="temperatura"type="number" name="temperatura" placeholder="Input">
     </li>
     <li>
-      <label for="grados">Grados</label><br>
-      <input type="radio" >Celsius <br>
-      <input type="radio" >Fahrenheit <br>
+      <label>Grados</label><br>
+      <input formControlName="celsius" type="radio" value="celsius">Celsius <br>
+      <input formControlName="fahrenheit" type="radio" value="fahrenheit">Fahrenheit <br>
     </li>
     <div class="boton">
       <button type="submit">Actualizar</button>
