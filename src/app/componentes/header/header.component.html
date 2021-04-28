@@ -1,0 +1,18 @@
+
+  <div class="encabezado">
+    <img src="assets/img/clima.jpg" >
+    <span class="clima">Clima</span>
+    <span class="region">Chile -
+    <ng-container *ngIf="valparaiso">Valparaiso</ng-container>
+    <ng-container *ngIf="metropolitana">Metropolitana</ng-container>
+    <ng-container *ngIf="biobio">Bio Bio</ng-container>
+    <ng-container *ngIf="araucania">Araucanía</ng-container>
+    </span>
+  </div>
+
+  <div class="menu">
+    <button (click)= "ventana1()">Valparaiso</button>
+    <button (click)= "ventana2()">Metropolitana</button>
+    <button (click)= "ventana3()">Bio Bio</button>
+    <button (click)= "ventana4()">Araucanía</button>
+  </div>

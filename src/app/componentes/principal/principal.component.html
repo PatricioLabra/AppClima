@@ -1,0 +1,20 @@
+<div class="temperaturas">
+  <button id="C" (click) = "ventanaC()">Celsius</button>
+  <button id="F" (click) = "ventanaF()">Fahrenheit</button>
+</div>
+
+<div class="clima">
+  <a [routerLink]="['/actualizar']" routerLinkActive="router-link-active">
+    <div class="tiempo" *ngFor="let item of regiones[0].semana" >
+      <span>{{item.nombreD}}</span> <br>
+      <img src="assets/{{item.imagen}}" > <br>
+      <span class="temp">{{item.tempC}}°</span> <br>
+      <span>{{item.tiempo}}</span> <br>
+    </div>
+  </a>
+</div>
+
+
+<div class="piePagina">
+  <span>Al dar click sobre cada dia permitira actualizar la informacion</span>
+</div>
