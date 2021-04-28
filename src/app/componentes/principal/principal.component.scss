@@ -4,6 +4,7 @@ div.clima.tiempo{
 }
 div.temperaturas{
   padding-left: 54%;
+  padding-bottom: 3%;
 }
 button{
   border:0px;
@@ -20,13 +21,12 @@ button:active{
 div.clima a{
   display: flex;
   text-align: center;
-  padding-bottom: 7%;
-  padding-top: 4%;
   text-decoration: none;
   color: black;
   font: oblique 15px cursive;
 }
 div.piePagina{
+  padding-top: 7%;
   margin-left: 3%;
   font: oblique 15px cursive;
 
