@@ -9,7 +9,7 @@ export class PrincipalComponent implements OnInit {
   public tempC:boolean;
   public tempF:boolean;
   regiones: Array<Region> = [];
-  
+
   constructor() {
     this.tempC = true;
     this.tempF = false;
@@ -24,10 +24,12 @@ export class PrincipalComponent implements OnInit {
   }
 
   ventanaC(){
-
+    this.tempC = true;
+    this.tempF = false;
   }
   ventanaF(){
-
+    this.tempC = false;
+    this.tempF = true;
   }
 
 }

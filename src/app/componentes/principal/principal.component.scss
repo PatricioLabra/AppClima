@@ -14,7 +14,9 @@ button{
 button:hover{
   color: gray;
 }
-
+button:active{
+  color:red;
+}
 div.clima a{
   display: flex;
   text-align: center;

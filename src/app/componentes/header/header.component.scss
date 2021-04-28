@@ -29,9 +29,11 @@ button{
   border:0px;
   padding:1%;
   font: oblique 15px cursive;
-
   background-color: white;
 }
 button:hover{
+  color: gray;
+}
+button:active{
   color: gray;
 }

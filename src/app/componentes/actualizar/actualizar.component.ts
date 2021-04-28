@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActualizarComponent implements OnInit {
 
-  constructor() { }
+
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }
 
+  /* Funcion actualizar*/
+  Actualizar(){
+    console.log();
+  }
 }
