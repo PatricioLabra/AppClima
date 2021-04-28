@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder,Validators,AbstractControl } from '@angular/forms'
+import { FormGroup, FormBuilder,Validators,} from '@angular/forms'
 
 @Component({
   selector: 'app-actualizar',
@@ -27,6 +27,9 @@ export class ActualizarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+/*+++ Funcion no finalizada, queda pendiente para despues de la revisión. +++++
+Por el momento se logra ver las opciones seleccionadas por el usuario. Sin embargo, no se ha realizado
+la modificación en la base de datos que se creó para este quizz*/
   actualizar(){
     console.log(this.formulario.value);
   };
