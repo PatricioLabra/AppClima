@@ -1,13 +1,13 @@
-<form >
+<form [formGroup] = "formulario" (ngSubmit)="actualizar()">
   <ul>
     <li>
-      <label for="region">Región</label><br>
-      <select class="region" name="region">
-        <option value="" selected>Select</option>
-        <option value="1">Valparaíso</option>
-        <option value="2">Metropolitana</option>
-        <option value="3">Bio Bio</option>
-        <option value="4">Araucanía</option>
+      <label>Región</label><br>
+      <select [formControlName]="region" >
+        <option value="null" selected>Select</option>
+        <option value="Valparaíso">Valparaíso</option>
+        <option value="Metropolitana">Metropolitana</option>
+        <option value="Bio Bio">Bio Bio</option>
+        <option value="Araucanía">Araucanía</option>
       </select>
     </li>
     <li>
@@ -19,7 +19,7 @@
     </li>
     <li>
       <label for="dia">Día</label><br>
-      <select class="dia" name="dia">
+      <select class="dia" name="dia" >
         <option value="" selected>Select</option>
         <option value="1">Lunes</option>
         <option value="2">Martes</option>
@@ -36,11 +36,11 @@
     </li>
     <li>
       <label for="grados">Grados</label><br>
-      <input type="radio">Celsius <br>
-      <input type="radio">Fahrenheit <br>
+      <input type="radio" >Celsius <br>
+      <input type="radio" >Fahrenheit <br>
     </li>
     <div class="boton">
-      <button type="submit" name="actualizar">Actualizar</button>
+      <button type="submit">Actualizar</button>
     </div>
   </ul>
 </form>
